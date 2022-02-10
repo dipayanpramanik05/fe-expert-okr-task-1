@@ -1,0 +1,87 @@
+.hero-item {
+  background: $white url("../img/floating_elements.png") no-repeat  fixed center;
+  .hero-item-container {
+    padding: 5% 10%;
+    .hero-item-text {
+      padding: 40px 15px;
+      position: absolute;
+      h1 {
+        line-height: 71px;
+      }
+      p {
+        padding-bottom: 40px;
+      }
+      .hero-item-actions {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+    .hero-item-image {
+      margin-left: 28%;
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+  .hero-item {
+    .hero-item-container {
+      padding: 5%;
+      .hero-item-text {
+        padding: 38px 5px;
+        h1 {
+          line-height: 47px;
+        }
+        p {
+          padding-bottom: 30px;
+        }
+      }
+      .hero-item-image {
+        //margin-left: 29%;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .hero-item {
+    .hero-item-container {
+      padding: 5% 0;
+      .hero-item-text {
+        padding: 50px 40px;
+        h1 {
+          line-height: 46px;
+          margin-bottom: 0px;
+        }
+        p {
+          padding-bottom: 25px;
+        }
+      }
+      .hero-item-image {
+        margin-left: 29%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .hero-item {
+    .hero-item-container {
+      display: flex;
+      flex-direction: column;
+      padding: 0;
+      .hero-item-text {
+        padding: 0px 20px;
+        h1 {
+          line-height: 48px;
+          margin-bottom: 0px;
+        }
+        p {
+          padding-bottom: 25px;
+        }
+      }
+      .hero-item-image {
+        margin-left: 0;
+      }
+    }
+  }
+}

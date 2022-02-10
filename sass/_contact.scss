@@ -1,0 +1,34 @@
+.contact-section {
+  text-align: center;
+
+  form {
+    input {
+      margin-right: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .contact-section {
+    form {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+
+      input {
+        margin-right: 0px
+      }
+
+      button {
+        margin-top: 8%;
+      }
+
+      p {
+        position: absolute;
+        margin: 5px;
+        top: 50%
+      }
+    }
+  }
+}

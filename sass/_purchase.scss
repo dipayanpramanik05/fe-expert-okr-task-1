@@ -1,0 +1,11 @@
+.purchase-section {
+  background-color: $site-green;
+  padding: 4% 0;
+  .purchase-content {
+    text-align: center;
+    h1 {
+      margin: 0 0 1% 0;
+      color: $white;
+    }
+  }
+}

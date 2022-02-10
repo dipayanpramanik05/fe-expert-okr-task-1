@@ -1,0 +1,56 @@
+@import "config";
+
+.block-section {
+  background-size: cover;
+  background-image: url('../img/block_bg.png');
+
+  .blocks {
+    padding: 24% 13%;
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 45px;
+    @media screen and (max-width: 767px) {
+      padding: 24% 15%;
+      grid-template-columns: repeat(1, 1fr);
+    }
+    @media screen and (min-width: 768px) and (max-width: 1439px) {
+      padding: 24% 10%;
+      gap: 15px;
+    }
+
+    .block {
+      background-color: $white;
+
+      img {
+        width: 100%;
+
+      }
+      .block-text {
+        padding: 0 25px;
+        @media screen and (min-width: 768px) and (max-width: 1023px) {
+          padding: 0 5px;
+        }
+      }
+    }
+    .block.block2, .block.block3 {
+      margin-top: 80%;
+      @media screen and (max-width: 767px) {
+        margin-top: 0%;
+      }
+    }
+    .block.block3 {
+      background-color: $secondary-green;
+      color: $black;
+      @media screen and (max-width: 767px) {
+        br{
+          display: none;
+        }
+      }
+      .block-text {
+        padding: 0;
+      }
+
+    }
+  }
+}

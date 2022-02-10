@@ -1,0 +1,52 @@
+.client-section {
+  padding: 5% 13% 0;
+
+  .clients {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3%;
+    .client {
+      display: flex;
+      align-items: flex-end;
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 265px;
+      color: white;
+      padding: 20px;
+      @media screen and (max-width: 1439px) {
+        height: 125px;
+      }
+      h3 {
+        margin: 0;
+      }
+      p {
+        font-weight: bold;
+        line-height: 22px;
+        margin: 5px 0;
+      }
+    }
+
+    .client-1 {
+      background-image: url('../img/case_study1.png');
+    }
+    .client-2 {
+      background-image: url('../img/case_study2.png');
+    }
+    .client-3 {
+      background-image: url('../img/case_study3.png');
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .client-section {
+    padding: 10% 15%;
+    .clients {
+      grid-template-columns: repeat(1, 1fr);
+      .client {
+        height: 250px;
+      }
+    }
+  }
+}

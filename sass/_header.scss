@@ -1,0 +1,77 @@
+@import "config";
+
+.header {
+  .inline-element {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    justify-content: space-between;
+    img {
+      width: 250px;
+    }
+    .nav li, .solid-btn {
+      font-weight: 800;
+      font-size: 17px;
+      line-height: 20px;
+      margin-right: 50px;
+      letter-spacing: 1.275px;
+    }
+  }
+  ul {
+    list-style: none;
+  }
+  .nav li {
+    border-bottom: 5px solid $site-green;
+    padding: 5px 10px;
+  }
+}
+
+@media screen and (min-width: 1023px) and (max-width: 1439px) {
+  .header {
+    .inline-element {
+      img {
+        width: 225px;
+      }
+      .nav li, .solid-btn {
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 1px;
+        margin-right: 30px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .header {
+    .inline-element {
+      img {
+        width: 200px;
+      }
+      .nav li, .solid-btn {
+        font-size: 11px;
+        line-height: 13px;
+        letter-spacing: 0.825px;
+        margin-right: 20px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .header {
+    .inline-element {
+      align-items: flex-start;
+      img {
+        width: 220px;
+      }
+      .nav li {
+        display: none;
+      }
+      .solid-btn {
+        padding: 5px 8px;
+        letter-spacing: 0.25px;
+      }
+    }
+  }
+}

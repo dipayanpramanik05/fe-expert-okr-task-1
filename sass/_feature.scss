@@ -1,0 +1,35 @@
+@import "config";
+
+.feature-item {
+  background: $grey url('../img/slash_black.png');
+  mix-blend-mode: normal;
+
+  .feature-content {
+    padding: 10% 15% 5% 15%;
+    position: relative;
+    text-align: center;
+    .feature-text {
+      position: absolute;
+      top: 48%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      h1 {
+        color: $white;
+      }
+      .light-btn {
+        border-color: $white;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .feature-item {
+    .feature-content {
+      padding: 10px;
+    }
+  }
+}
+// .highlight-region {
+//   background: $grey url('../img/slash_black.png');
+// }

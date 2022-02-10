@@ -1,0 +1,18 @@
+.brand-section {
+  padding: 50px 15% 100px;
+  text-align: center;
+  .brand-item {
+    padding: 10px 0;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    @media screen and (max-width: 767px) {
+      padding: 0;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 35%;
+    }
+
+    img {
+      width: 100px;
+    }
+  }
+}

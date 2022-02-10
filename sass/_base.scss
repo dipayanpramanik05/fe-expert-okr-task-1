@@ -1,0 +1,155 @@
+@import "config";
+@import "mixin";
+
+body {
+  font-family: 'Raleway', sans-serif;
+}
+
+h1, h2, h3 {
+  font-style: normal;
+  font-weight: 900;
+}
+
+h1, h2 {
+  font-family: Playfair Display;
+}
+
+h1 {
+  font-size: 59px;
+  line-height: 80px
+}
+
+h2 {
+  font-size: 44px;
+  line-height: 48px;
+}
+
+h3 {
+  font-size: 34px;
+  line-height: 40px;
+}
+
+p{
+  font-style: normal;
+  font-weight: 500;
+  font-size: 19px;
+  line-height: 26px;
+}
+
+a {
+  color: $black;
+  font-style: normal;
+  text-decoration: none;
+}
+
+button {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 21px;
+  line-height: 25px;
+  text-align: center;
+  letter-spacing: 1.05px;
+}
+
+form {
+  input {
+    background: $white;
+    border: 1px solid $grey-input;
+    box-sizing: border-box;
+    border-radius: 5px;
+    width: 300px;
+    padding: 16px;
+  }
+}
+
+p.site-green {
+  color: $site-green;
+}
+
+.solid-btn {
+  @include button($white, $site-green);
+}
+
+.light-btn {
+  @include button($site-green, $white);
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+  h1 {
+    font-size: 48px;
+  }
+  p{
+    font-size: 15px;
+    line-height: 21px;
+  }
+  button {
+    font-size: 16px;
+    line-height: 18px;
+  }
+  .solid-btn {
+    @include button($white, $site-green, 8px, 15px);
+  }
+  .light-btn {
+    @include button($site-green, $white, 8px, 15px);
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  h1 {
+    font-size: 42px;
+    line-height: 56px;
+  }
+  h2 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  h3 {
+    font-size: 22px;
+    line-height: 26px;
+  }
+  p{
+    font-size: 12px;
+    line-height: 16px;
+  }
+  button {
+    font-size: 13px;
+    line-height: 15px;
+    letter-spacing: 0.65px;
+  }
+  .solid-btn {
+    @include button($white, $site-green, 5px, 10px);
+  }
+  .light-btn {
+    @include button($site-green, $white, 5px, 10px);
+  }
+}
+@media screen and (max-width: 767px) {
+  h1 {
+    font-size: 42px;
+    line-height: 48px;
+  }
+  h2 {
+    font-size: 26px;
+    line-height: 36px;
+  }
+  p{
+    font-size: 14px;
+    line-height: 16px;
+  }
+  button {
+    font-size: 13px;
+    line-height: 15px;
+    letter-spacing: 0.825px;
+  }
+  form {
+    input {
+      width: 400px;
+    }
+  }
+  .solid-btn {
+    @include button($white, $site-green, 10px, 15px);
+  }
+  .light-btn {
+    @include button($site-green, $white, 10px, 15px);
+  }
+}
